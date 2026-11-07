@@ -1,4 +1,20 @@
-[README.md](https://github.com/user-attachments/files/34510996/README.md)
-# ice-cream-goodness[server.js](https://github.com/user-attachments/files/34510997/server.js)
+# ICE CREAM GANG — ระบบคะแนนความดีแบบมีเซิร์ฟเวอร์
 
-คะแนนความดี
+ระบบนี้ใช้ Node.js + HTTP API + ไฟล์ JSON เก็บข้อมูลบนเครื่องเซิร์ฟเวอร์
+
+## รันบนคอมตัวเอง
+1. ติดตั้ง Node.js 18+
+2. เปิด Terminal/CMD ในโฟลเดอร์นี้
+3. รัน `node server.js`
+4. เปิด `http://localhost:3000`
+
+## ให้คนใน Wi-Fi เดียวกันเข้า
+เปิด `http://IP-ของเครื่องเซิร์ฟเวอร์:3000` เช่น `http://192.168.1.20:3000` และอนุญาต Firewall พอร์ต 3000
+
+## ให้คนทั่วโลกเข้าได้
+ต้องนำโฟลเดอร์นี้ไปวางบน VPS/Cloud ที่มี public IP หรือใช้บริการโฮสต์ Node.js แล้วตั้ง PORT ตามผู้ให้บริการ จากนั้นจะได้ลิงก์ HTTPS เช่น `https://ชื่อเว็บของคุณ...`
+
+## แอดมิน
+รหัสเริ่มต้น: `ICEADMIN2026` แล้วเปลี่ยนได้ในหน้า ADMIN
+
+ข้อมูลสมาชิกอยู่ที่ `data/members.json` และรหัสแอดมินอยู่ที่ `data/admin.json` ห้ามลบสองไฟล์นี้
